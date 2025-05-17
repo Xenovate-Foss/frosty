@@ -34,7 +34,7 @@ const PageContentBlock: React.FC<PageContentBlockProps> = ({ title, showFlashKey
                         >
                             Pterodactyl&reg;
                         </a>
-                        &nbsp;&copy; 2015 - {new Date().getFullYear()}
+                        &nbsp;&copy; 2015 - {new Date().getFullYear()} & Frosty theme by xenovate-foss
                     </p>
                 </ContentContainer>
             </>
