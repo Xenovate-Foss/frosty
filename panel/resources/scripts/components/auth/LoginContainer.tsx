@@ -233,12 +233,13 @@ const LoginContainer = ({ history }: RouteComponentProps) => {
             {({ isSubmitting, setSubmitting, submitForm }) => (
                 <EnhancedLoginFormContainer
                     title={'Login to Continue'}
-                    css={tw`w-full flex bg-gray-900 shadow-xl border border-blue-900`}
+                    css={tw`w-full flex bg-gray-900 shadow-xl static`}
                     className='login-form-container'
                 >
-                    <AnimatedField className='animate-field'>
+                    <AnimatedField className='animate-field text-white border-blue-800 bg-dark'>
                         <Field
-                            light
+                            dark
+                            className='border border-blue-900 text-white'
                             type={'text'}
                             label={'Username or Email'}
                             name={'username'}
@@ -246,7 +247,7 @@ const LoginContainer = ({ history }: RouteComponentProps) => {
                         />
                     </AnimatedField>
                     <AnimatedField css={tw`mt-6`} className='animate-field'>
-                        <Field light type={'password'} label={'Password'} name={'password'} disabled={isSubmitting} />
+                        <Field dark type={'password'} label={'Password'} name={'password'} disabled={isSubmitting} />
                     </AnimatedField>
                     <AnimatedField css={tw`mt-6`} className='animate-field'>
                         <AnimatedButton
@@ -258,21 +259,6 @@ const LoginContainer = ({ history }: RouteComponentProps) => {
                             Login
                         </AnimatedButton>
                     </AnimatedField>
-                    {recaptchaEnabled && (
-                        <Reaptcha
-                            ref={ref}
-                            size={'invisible'}
-                            sitekey={siteKey || '_invalid_key'}
-                            onVerify={(response) => {
-                                setToken(response);
-                                submitForm();
-                            }}
-                            onExpire={() => {
-                                setSubmitting(false);
-                                setToken('');
-                            }}
-                        />
-                    )}
                     <AnimatedField css={tw`mt-6 text-center`} className='animate-field'>
                         <ForgotPasswordLink
                             to={'/auth/password'}
@@ -281,6 +267,23 @@ const LoginContainer = ({ history }: RouteComponentProps) => {
                             Forgot password?
                         </ForgotPasswordLink>
                     </AnimatedField>
+                    {recaptchaEnabled && (
+                        <div css={tw`top-20 left-full right-0 bottom-0 absolute`}>
+                            <Reaptcha
+                                ref={ref}
+                                size={'invisible'}
+                                sitekey={siteKey || '_invalid_key'}
+                                onVerify={(response) => {
+                                    setToken(response);
+                                    submitForm();
+                                }}
+                                onExpire={() => {
+                                    setSubmitting(false);
+                                    setToken('');
+                                }}
+                            />
+                        </div>
+                    )}
                 </EnhancedLoginFormContainer>
             )}
         </Formik>

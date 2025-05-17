@@ -128,20 +128,21 @@ const FormTitle = styled.h2`
     animation: ${shimmer} 8s linear infinite;
 `;
 
-const LogoContainer = styled.div`
-    border-right: 2px solid ${colors.accent};
-    position: relative;
+/*&:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -2px;
+    width: 2px;
+    height: 50%;
+    background: linear-gradient(to bottom, ${colors.accent}, transparent);
+    animation: ${float} 4s infinite ease-in-out;
+}
+border-right: 2px solid ${colors.accent};
+*/
 
-    &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: -2px;
-        width: 2px;
-        height: 50%;
-        background: linear-gradient(to bottom, ${colors.accent}, transparent);
-        animation: ${float} 4s infinite ease-in-out;
-    }
+const LogoContainer = styled.div`
+    position: relative;
 
     img {
         filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.4));
