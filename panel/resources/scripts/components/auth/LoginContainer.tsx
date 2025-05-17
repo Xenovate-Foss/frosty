@@ -238,7 +238,7 @@ const LoginContainer = ({ history }: RouteComponentProps) => {
                 >
                     <AnimatedField className='animate-field text-white border-blue-800 bg-dark'>
                         <Field
-                            dark
+                            
                             className='border border-blue-900 text-white'
                             type={'text'}
                             label={'Username or Email'}
@@ -247,7 +247,7 @@ const LoginContainer = ({ history }: RouteComponentProps) => {
                         />
                     </AnimatedField>
                     <AnimatedField css={tw`mt-6`} className='animate-field'>
-                        <Field dark type={'password'} label={'Password'} name={'password'} disabled={isSubmitting} />
+                        <Field  type={'password'} label={'Password'} name={'password'} disabled={isSubmitting} />
                     </AnimatedField>
                     <AnimatedField css={tw`mt-6`} className='animate-field'>
                         <AnimatedButton

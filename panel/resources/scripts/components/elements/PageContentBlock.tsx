@@ -20,7 +20,7 @@ const PageContentBlock: React.FC<PageContentBlockProps> = ({ title, showFlashKey
     return (
         <CSSTransition timeout={150} classNames={'fade'} appear in>
             <>
-                <ContentContainer css={tw`my-4 sm:my-10`} className={className}>
+                <ContentContainer css={tw`my-4 sm:my-10 bg-[#121212]`} className={className}>
                     {showFlashKey && <FlashMessageRender byKey={showFlashKey} css={tw`mb-4`} />}
                     {children}
                 </ContentContainer>
@@ -42,4 +42,4 @@ const PageContentBlock: React.FC<PageContentBlockProps> = ({ title, showFlashKey
     );
 };
 
-export default PageContentBlock;
+export default PageContentBlock
