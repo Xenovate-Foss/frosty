@@ -1,0 +1,54 @@
+{
+  "auth.js": {
+    "src": "/assets/auth.f45a813e.js",
+    "integrity": "sha384-F/pG8LQaxVbT4my3ZMiAgISRC06Ag2r3kpuRVmSvfTgdSEPZIB97+Lm5pLQUPSzs"
+  },
+  "auth~dashboard.js": {
+    "src": "/assets/auth~dashboard.2d60dacf.js",
+    "integrity": "sha384-H5gRofAvI6rCt8n1njyJOjH88iKxS3UyuUD0cD+W5aZPt1IzW4gE/eE6UIEA9FGH"
+  },
+  "auth~dashboard~server.js": {
+    "src": "/assets/auth~dashboard~server.f45a813e.js",
+    "integrity": "sha384-x0Uaqh930Q6XCwCEclreoHnKJER8fb3j7fXQmL3y5VT8EX2T1lc0mNgkCu2bcfw4"
+  },
+  "dashboard.js": {
+    "src": "/assets/dashboard.f45a813e.js",
+    "integrity": "sha384-VX9N/J8HQu4rJ5dVxUbZZ8syZl0J3aAgRjST77v9XlaB5EsZatKC2N1cH/BZDlOs"
+  },
+  "dashboard~server.js": {
+    "src": "/assets/dashboard~server.f45a813e.js",
+    "integrity": "sha384-qnSihQMRgk5OiW69dKjlW3KinUS+27IqxGMWjHswnYp5I/GWn5Iole4lK4FHNqAL"
+  },
+  "main.js": {
+    "src": "/assets/bundle.f45a813e.js",
+    "integrity": "sha384-2gbQr+LGDHKydRls4KiPNP5raNRBfNJbN35QtFaR4lZvU2V2FzHmvKz0L+4jpvIy"
+  },
+  "server.js": {
+    "src": "/assets/server.f45a813e.js",
+    "integrity": "sha384-TuS00nOPPP+inHvKAMzkSpucS4ww+5bVYkNmRivXFznKJ51HIvExUkYUhYsR5L+B"
+  },
+  "vendors~auth.js": {
+    "src": "/assets/vendors~auth.f45a813e.js",
+    "integrity": "sha384-jq/oYU5iHgUsn25CTOgu8Q20Mn79jVsEASRTTvHNKcUHnCWrYjpyEL3+v17V9+NZ"
+  },
+  "vendors~auth~dashboard.js": {
+    "src": "/assets/vendors~auth~dashboard.2d60dacf.js",
+    "integrity": "sha384-1sBdpw44Re9be8Tp/iDN9j9Ar1CDA/AmIUX6Otb53s28nvoRYrrTYrpg+QIh0+Q9"
+  },
+  "vendors~auth~dashboard~server.js": {
+    "src": "/assets/vendors~auth~dashboard~server.f45a813e.js",
+    "integrity": "sha384-N4OOHfxqgjCodXv/Ll6O5ntTbqPGif+pNcUQMMEZJU8p1N6eAvT1gRc6nePVHI7a"
+  },
+  "vendors~dashboard.js": {
+    "src": "/assets/vendors~dashboard.2d60dacf.js",
+    "integrity": "sha384-vZ5fCfVqm1UEl8xsz2m7pTpZ/WnZylgf5eZxYT5nR6nLl/LqEsypmXQaUfyYMWC0"
+  },
+  "vendors~dashboard~server.js": {
+    "src": "/assets/vendors~dashboard~server.f45a813e.js",
+    "integrity": "sha384-eOizwm32YNw7N0MWnu+SHqSUUJmoABA2m0Eg5rhXPE5rkIFEzbYXXI5HER/pL9B8"
+  },
+  "vendors~server.js": {
+    "src": "/assets/vendors~server.f45a813e.js",
+    "integrity": "sha384-H0ecbhHT///jj1AmY/jCfw9YpZ5Q8cfChT6LbuLX1zVXC7NnSEx5eFHoAsvgnKvV"
+  }
+}
